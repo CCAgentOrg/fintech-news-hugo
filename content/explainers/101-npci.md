@@ -220,3 +220,18 @@ NPCI is the engine driving India's digital payment revolution. From UPI to RuPay
 ---
 
 *This is part of the Cashless Watch 101 Series - Simplifying Indian Fintech for everyone.*
+
+---
+
+## Prime References
+
+- [NPCI Official Website](https://www.npci.org.in/) - National Payments Corporation of India
+- [UPI Statistics - NPCI](https://www.npci.org.in/statistics/upi) - Monthly transaction data
+- [NPCI Products](https://www.npci.org.in/what-we-do) - All NPCI product overview
+- [RuPay - NPCI](https://www.npci.org.in/what-we-do/rupay) - Domestic card network
+- [Bharat BillPay - NPCI](https://www.bharatbillpay.com/) - Bill payment system
+- [NPCI International](https://www.npci.org.in/what-we-do/upi/upi-international) - UPI global expansion
+- [IMPS - NPCI](https://www.npci.org.in/what-we-do/imps) - Immediate Payment Service
+- [NACH - National Automated Clearing House](https://www.npci.org.in/what-we-do/nach) - Bulk payment system
+- [Account Aggregator - NPCI](https://www.npci.org.in/what-we-do/aa) - Financial data sharing
+- [UPI Lite - NPCI](https://www.npci.org.in/what-we-do/upi/upi-lite) - Offline payments

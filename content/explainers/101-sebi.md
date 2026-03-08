@@ -248,3 +248,18 @@ SEBI plays a crucial role in maintaining investor confidence and market integrit
 ---
 
 *This is part of the Cashless Watch 101 Series - Simplifying Indian Fintech for everyone.*
+
+---
+
+## Prime References
+
+- [SEBI Official Website](https://www.sebi.gov.in/) - Securities and Exchange Board of India
+- [SEBI Circulars](https://www.sebi.gov.in/legal/circulars.html) - Latest regulatory circulars
+- [SEBI Investment Adviser Regulations](https://www.sebi.gov.in/legal/regulations/august-2023/sebi-investment-advisers-regulations-2023) - IA regulations
+- [NSE - National Stock Exchange](https://www.nseindia.com/) - India's largest stock exchange
+- [BSE - Bombay Stock Exchange](https://www.bseindia.com/) - Asia's oldest stock exchange
+- [AMFI - Association of Mutual Funds](https://www.amfiindia.com/) - Mutual fund industry body
+- [SEBI Investor Awareness](https://www.sebi.gov.in/investor-education) - Investor protection resources
+- [Demat Account - CDSL](https://www.cdslindia.com/) - Central Depository Services
+- [Demat Account - NSDL](https://www.nsdl.co.in/) - National Securities Depository
+- [SEBI Smart ODR](https://smartodr.sebi.gov.in/) - Online dispute resolution
