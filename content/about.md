@@ -51,25 +51,38 @@ We run **2 specialized agents** that publish content daily:
 
 ## Data Sources
 
-Our agents monitor:
+| Category | Primary Oracles | Secondary Sources |
+|----------|-----------------|-------------------|
+| **Regulatory** | [RBI](https://www.rbi.org.in), [SEBI](https://www.sebi.gov.in) | Economic Times, Mint |
+| **Payments** | [NPCI](https://www.npci.org.in), UPI stats | Business Standard |
+| **Startups** | [Inc42](https://inc42.com), [Tracxn](https://tracxn.com) | YourStory, Entrackr |
+| **Markets** | [NSE](https://www.nseindia.com), [BSE](https://www.bseindia.com) | Financial Express |
+| **International** | [IMF India](https://www.imf.org/en/Countries/IND), [World Bank](https://www.worldbank.org/en/country/india) | The Ken (paywall) |
 
-### Official Sources
-- [Reserve Bank of India (RBI)](https://www.rbi.org.in) — Circulars, notifications, payment systems
-- [SEBI](https://www.sebi.gov.in) — Regulations, investor protection, fintech guidelines
-- [Finance Ministry](https://www.finmin.nic.in) — Budget, policy, digital payments
-- [NPCI](https://www.npci.org.in) — UPI, IMPS, NEFT, Bharat BillPay updates
-- [IBBI](https://www.ibbi.gov.in) — Insolvency, fintech creditors
+## 🤖 Agent Source Code
 
-### Industry & News
-- [Inc42](https://inc42.com), [Entrackr](https://entrackr.com), [The Ken](https://the-ken.com) — Startup funding, analysis
-- [Economic Times](https://economictimes.indiatimes.com), [Business Standard](https://www.business-standard.com) — Market news
-- [YourStory](https://yourstory.com), [TechCrunch India](https://techcrunch.com/category/india/) — Ecosystem coverage
-- Company press releases and investor updates
+The AI agents that generate this newsletter are **open source** and documented in detail:
 
-### Data & Research
-- [RBI Payment Systems Data](https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=20968)
-- [SEBI Statistics](https://www.sebi.gov.in/sebiweb/other/otherAction.do?doPublication=yes)
-- [NPCI Statistics](https://www.npci.org.in/what-we-do/upi/product-statistics)
+| Agent | Schedule | Coverage | Source Code |
+|-------|----------|----------|-------------|
+| **Daily Fintech Brief** | Daily @ 8:00 AM IST | Last 24 hours across 8 categories | [View Agent Instructions →](/agents/daily-fintech-brief-agent/) |
+| **Themed Fintech Deep Dive** | Daily @ 8:30 AM IST | Last 7 days, rotating daily themes | [View Agent Instructions →](/agents/themed-fintech-deep-dive-agent/) |
+
+### How to Improve the Agents
+
+These agents' instructions are version-controlled and open for community improvement:
+
+1. **Open an Issue**: [github.com/CCAgentOrg/fintech-news-hugo/issues](https://github.com/CCAgentOrg/fintech-news-hugo/issues)
+   - Suggest new oracle sources to check (RBI circulars, SEBI master circulars, etc.)
+   - Report coverage gaps or inaccuracies
+   - Propose new analysis frameworks
+
+2. **Submit a PR**: Edit the agent instruction files directly
+   - Fork the repo
+   - Modify `content/agents/*.md`
+   - Submit pull request with rationale
+
+3. **Review Changes**: Agent improvements are publicly visible and auditable
 
 ## Human Oversight
 
