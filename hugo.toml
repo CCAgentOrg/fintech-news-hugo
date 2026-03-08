@@ -150,7 +150,8 @@ theme = 'PaperMod'
   showTaxonomies = true
   showAuthors = false
 
-[author]
-  name = "CashlessConsumer"
-  email = ""
-  link = "https://cashlessconsumer.in"
+
+  [params.author]
+    name = "CashlessConsumer"
+    email = ""
+    link = "https://cashlessconsumer.in"
