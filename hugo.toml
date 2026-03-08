@@ -60,6 +60,12 @@ theme = 'PaperMod'
     url = '/index.xml'
     weight = 40
 
+  [[menu.main]]
+    identifier = 'about'
+    name = 'ℹ️ About'
+    url = '/about/'
+    weight = 50
+
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
 
