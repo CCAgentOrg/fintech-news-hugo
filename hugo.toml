@@ -155,3 +155,9 @@ theme = 'PaperMod'
     name = "CashlessConsumer"
     email = ""
     link = "https://cashlessconsumer.in"
+
+[[menu.main]]
+  identifier = 'explainers'
+  name = '📚 101'
+  url = '/explainers'
+  weight = 25
