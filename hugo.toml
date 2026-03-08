@@ -1,0 +1,76 @@
+baseURL = 'https://cashlessconsumer.github.io/fintech-news'
+languageCode = 'en-us'
+title = 'Indian Fintech News'
+theme = 'PaperMod'
+
+[params]
+  author = 'Cashless Consumer'
+  description = 'Daily updates on Indian Fintech and Banking'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  [params.homeInfoParams]
+    Title = '🇮🇳 Indian Fintech News'
+    Content = 'Daily updates, analysis, and insights on the Indian fintech and banking ecosystem. Stay informed about RBI regulations, UPI developments, funding rounds, and digital payments innovation.'
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/cashlessconsumer'
+
+  [[params.socialIcons]]
+    name = 'twitter'
+    url = 'https://twitter.com/cashlessconsumer'
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = '🏠 Home'
+    url = '/'
+    weight = 10
+
+  [[menu.main]]
+    identifier = 'posts'
+    name = '📰 Posts'
+    url = '/posts/'
+    weight = 20
+
+  [[menu.main]]
+    identifier = 'tags'
+    name = '🏷️ Tags'
+    url = '/tags/'
+    weight = 30
+
+  [[menu.main]]
+    identifier = 'rss'
+    name = '📡 RSS'
+    url = '/index.xml'
+    weight = 40
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      typographer = true
+  [markup.highlight]
+    style = 'github'
+    lineNos = true
+    codeFences = true
+    guessSyntax = true
