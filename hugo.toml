@@ -54,11 +54,6 @@ theme = 'PaperMod'
     Text = "✏️ Suggest Changes"
     appendFilePath = true
 
-  [params.author]
-    name = "CashlessConsumer"
-    email = ""
-    link = "https://cashlessconsumer.in"
-    bio = "Consumer advocacy & research for India's digital payments ecosystem"
 
   [[params.socialIcons]]
     name = 'github'
@@ -154,3 +149,8 @@ theme = 'PaperMod'
   recentPostCount = 5
   showTaxonomies = true
   showAuthors = false
+
+[author]
+  name = "CashlessConsumer"
+  email = ""
+  link = "https://cashlessconsumer.in"
