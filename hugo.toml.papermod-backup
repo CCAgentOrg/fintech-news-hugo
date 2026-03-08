@@ -1,0 +1,187 @@
+baseURL = 'https://watch.cashlessconsumer.in'
+languageCode = 'en-us'
+title = 'Cashless Watch'
+theme = "stack"
+
+[params]
+  description = 'AI-powered fintech intelligence for India — daily briefs at 8:00 AM, themed deep dives at 8:30 AM'
+  keywords = ['Fintech', 'India', 'UPI', 'RBI', 'SEBI', 'Startups', 'Payments', 'Banking', 'AI']
+  images = ['https://watch.cashlessconsumer.in/cover.png']
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+  enableEmoji = true
+
+  # Profile Mode Sidebar
+  [params.profileMode]
+    enabled = true
+    Title = "💰 Cashless Watch"
+    Subtitle = "AI-powered fintech intelligence for India | Daily @ 8:00 AM · Deep dives @ 8:30 AM"
+    imageUrl = "/avatar.png"
+    imageTitle = "Cashless Watch"
+    imageWidth = 120
+    imageHeight = 120
+    buttons = [
+      {name = "📰 Read Latest", url = "posts"},
+      {name = "🤖 View Agents", url = "agents"},
+      {name = "ℹ️ About", url = "about"}
+    ]
+
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+
+  [params.cover]
+    hidden = true
+    hiddenInList = false
+    hiddenInSingle = false
+
+  [params.editPost]
+    URL = "https://github.com/CCAgentOrg/cashless-watch/content"
+    Text = "✏️ Suggest Changes"
+    appendFilePath = true
+
+  [params.author]
+    name = "CashlessConsumer"
+    email = ""
+    link = "https://cashlessconsumer.in"
+    bio = "Consumer advocacy & research for India's digital payments ecosystem"
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/CCAgentOrg/cashless-watch'
+
+  [[params.socialIcons]]
+    name = 'x'
+    url = 'https://twitter.com/CashlessConsumer'
+
+  [[params.socialIcons]]
+    name = 'rss'
+    url = 'index.xml'
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = '🏠 Home'
+    url = '/'
+    weight = 10
+
+  [[menu.main]]
+    identifier = 'posts'
+    name = '📰 Posts'
+    url = '/posts/'
+    weight = 20
+
+  [[menu.main]]
+    identifier = 'agents'
+    name = '🤖 Agents'
+    url = '/agents/'
+    weight = 30
+
+  [[menu.main]]
+    identifier = 'about'
+    name = 'ℹ️ About'
+    url = '/about/'
+    weight = 40
+
+  [[menu.main]]
+    identifier = 'tags'
+    name = '🏷️ Tags'
+    url = '/tags/'
+    weight = 50
+
+[sitemap]
+  changefreq = 'daily'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.x]
+    disable = false
+    enableDNT = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+[services]
+  [services.instagram]
+    disableInlineCSS = true
+  [services.x]
+    disableInlineCSS = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      typographer = true
+  [markup.highlight]
+    style = 'github'
+    lineNos = true
+    codeFences = true
+    guessSyntax = true
+
+# Sidebar Configuration for Post Pages
+[params.search]
+  enable = true
+
+[params.sidebar]
+  enable = true
+  showRecentPosts = true
+  recentPostCount = 5
+  showTaxonomies = true
+  showAuthors = false
+# Enable Search (requires Fuse.js index)
+[params.search]
+  enable = true
+  placeholder = "Search posts..."
+
+# PaperMod home page mode
+[params.profileMode]
+  enabled = true
+  Title = "💰 Cashless Watch"
+  Subtitle = "AI-powered fintech intelligence for India"
+  imageUrl = "/avatar.png"
+  imageTitle = "Cashless Watch"
+  imageWidth = 120
+  imageHeight = 120
+  buttons = [
+    {name = "📰 Read Latest", url = "posts"},
+    {name = "🤖 View Agents", url = "agents"},
+    {name = "ℹ️ About", url = "about"}
+  ]
+
+# Show post meta info
+[params]
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  enableSearch = true
