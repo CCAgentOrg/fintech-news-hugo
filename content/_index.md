@@ -1,49 +1,10 @@
 ---
 title: "Cashless Watch"
-description: "India's premier automated fintech intelligence — daily briefs on UPI, RBI, startups, funding & policy."
+description: "India's automated fintech intelligence"
 date: 2026-03-08T10:00:00+05:30
 draft: false
 ---
 
-<!-- JSON-LD Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Cashless Watch",
-  "description": "India's automated fintech intelligence",
-  "url": "https://watch.cashlessconsumer.in",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Cashless Watch",
-    "url": "https://cashlessconsumer.in"
-  }
-}
-</script>
+🤖 **AI-Powered** · Daily @ 8:00 AM · Deep Dives @ 8:30 AM
 
-<!-- Automated Badge -->
-<div style="background: linear-gradient(90deg, #1a4731 0%, #276749 100%); color: white; padding: 1rem; border-radius: 8px; margin-bottom: 2rem; text-align: center;">
-  <span style="font-size: 1.1rem;">🤖 <strong>AI-Powered</strong> | Daily @ 8:00 AM IST | Themed Deep Dives @ 8:30 AM IST</span>
-</div>
-
-### 📰 Read Today's Brief
-
-Daily fintech briefs on RBI, SEBI, NPCI, startups, funding & policy.
-
-[Latest Posts](https://watch.cashlessconsumer.in/posts/)
-|
-[📡 RSS Feed](https://watch.cashlessconsumer.in/index.xml)
-
-### 🤖 Automated by AI Agents
-
-All content is AI-generated with source verification. View the agents or suggest improvements.
-
-[View Agents](https://watch.cashlessconsumer.in/agents/)
-|
-[Contribute](https://github.com/CCAgentOrg/cashless-watch)
-
-### ℹ️ How It Works
-
-Autonomous agents monitor RBI, SEBI, NPCI & 25+ official sources. Daily briefs at 8:00 AM, themed deep dives at 8:30 AM.
-
-[Learn More →](https://watch.cashlessconsumer.in/about/)
+<a href="/posts/" style="background: #1a4731; color: white; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none;">📰 Read Latest</a>
