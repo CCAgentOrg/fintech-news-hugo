@@ -27,8 +27,7 @@ theme = 'PaperMod'
   [params.profileMode]
     enabled = true
     Title = "💰 Cashless Watch"
-    Subtitle = "AI-powered fintech intelligence for India  
-Daily briefs at 8:00 AM · Themed deep dives at 8:30 AM"
+    Subtitle = "AI-powered fintech intelligence for India | Daily @ 8:00 AM · Deep dives @ 8:30 AM"
     imageUrl = "/avatar.png"
     imageTitle = "Cashless Watch"
     imageWidth = 120
