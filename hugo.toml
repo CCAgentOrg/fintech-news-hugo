@@ -4,8 +4,7 @@ title = 'Indian Fintech News'
 theme = 'PaperMod'
 
 [params]
-  author = 'CashlessConsumer'
-  description = 'Daily Indian Fintech & Banking News – UPI, RBI updates, startup funding, digital payments innovation.'
+  description = 'Daily Indian Fintech & Banking News – UPI, RBI regulations, SEBI circulars, startup funding, digital payments innovation.'
   keywords = ['Fintech', 'India', 'UPI', 'RBI', 'SEBI', 'Startups', 'Payments', 'Banking']
   images = ['https://newsletter.cashlessconsumer.in/cover.png']
   ShowReadingTime = true
