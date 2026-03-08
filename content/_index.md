@@ -1,10 +1,23 @@
 ---
 title: "Cashless Watch"
-description: "India's automated fintech intelligence"
+description: "AI-powered fintech intelligence for India — daily briefs at 8:00 AM, themed deep dives at 8:30 AM"
 date: 2026-03-08T10:00:00+05:30
 draft: false
 ---
 
-🤖 **AI-Powered** · Daily @ 8:00 AM · Deep Dives @ 8:30 AM
-
-<a href="/posts/" style="background: #1a4731; color: white; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none;">📰 Read Latest</a>
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Cashless Watch",
+  "description": "AI-powered fintech intelligence for India — daily briefs at 8:00 AM, themed deep dives at 8:30 AM",
+  "url": "https://watch.cashlessconsumer.in",
+  "publisher": {
+    "@type": "Organization",
+    "name": "CashlessConsumer",
+    "url": "https://cashlessconsumer.in"
+  },
+  "image": "https://watch.cashlessconsumer.in/avatar.png"
+}
+</script>

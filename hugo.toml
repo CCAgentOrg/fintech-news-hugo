@@ -4,8 +4,8 @@ title = 'Cashless Watch'
 theme = 'PaperMod'
 
 [params]
-  description = 'Daily Indian Fintech & Banking News – UPI, RBI regulations, SEBI circulars, startup funding, digital payments innovation.'
-  keywords = ['Fintech', 'India', 'UPI', 'RBI', 'SEBI', 'Startups', 'Payments', 'Banking']
+  description = 'AI-powered fintech intelligence for India — daily briefs at 8:00 AM, themed deep dives at 8:30 AM'
+  keywords = ['Fintech', 'India', 'UPI', 'RBI', 'SEBI', 'Startups', 'Payments', 'Banking', 'AI']
   images = ['https://watch.cashlessconsumer.in/cover.png']
   ShowReadingTime = true
   ShowPostNavLinks = true
@@ -23,24 +23,21 @@ theme = 'PaperMod'
   tocopen = false
   enableEmoji = true
 
-  [params.homeInfoParams]
-    Title = "Cashless Watch"
-    Content = "India's automated fintech intelligence — daily briefs on UPI, RBI, startups, funding & policy. Plus themed deep dives every day at 8:30 AM."
-
-  [[params.profileMode.buttons]]
-    name = "📰 Latest Posts"
-    url = "posts"
-    weight = 10
-
-  [[params.profileMode.buttons]]
-    name = "ℹ️ About"
-    url = "about"
-    weight = 20
-
-  [[params.profileMode.buttons]]
-    name = "🤖 Agents"
-    url = "agents"
-    weight = 30
+  # Profile Mode Sidebar
+  [params.profileMode]
+    enabled = true
+    Title = "💰 Cashless Watch"
+    Subtitle = "AI-powered fintech intelligence for India  
+Daily briefs at 8:00 AM · Themed deep dives at 8:30 AM"
+    imageUrl = "/avatar.png"
+    imageTitle = "Cashless Watch"
+    imageWidth = 120
+    imageHeight = 120
+    buttons = [
+      {name = "📰 Read Latest", url = "posts"},
+      {name = "🤖 View Agents", url = "agents"},
+      {name = "ℹ️ About", url = "about"}
+    ]
 
   [params.assets]
     favicon = "/favicon.ico"
@@ -69,7 +66,7 @@ theme = 'PaperMod'
     url = 'https://github.com/CCAgentOrg/cashless-watch'
 
   [[params.socialIcons]]
-    name = 'twitter'
+    name = 'x'
     url = 'https://twitter.com/CashlessConsumer'
 
   [[params.socialIcons]]
