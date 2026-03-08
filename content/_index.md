@@ -1,6 +1,6 @@
 ---
-title: "CashlessConsumer Fintech"
-description: "India's only automated fintech intelligence — daily briefs on UPI, RBI, startups, funding & policy."
+title: "Cashless Watch"
+description: "India's premier automated fintech intelligence — daily briefs on UPI, RBI, startups, funding & policy."
 date: 2026-03-08T10:00:00+05:30
 draft: false
 ---
@@ -10,12 +10,12 @@ draft: false
 {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": "CashlessConsumer Fintech",
+  "name": "Cashless Watch",
   "description": "India's automated fintech intelligence",
   "url": "https://newsletter.cashlessconsumer.in",
   "publisher": {
     "@type": "Organization",
-    "name": "CashlessConsumer",
+    "name": "Cashless Watch",
     "url": "https://cashlessconsumer.in"
   }
 }

@@ -1,4 +1,4 @@
-# 🤖 CashlessConsumer Fintech — AI Agents
+# 🤖 Cashless Watch — AI Agents
 
 ## Agent Operations
 

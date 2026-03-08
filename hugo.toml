@@ -1,6 +1,6 @@
 baseURL = 'https://newsletter.cashlessconsumer.in'
 languageCode = 'en-us'
-title = 'Indian Fintech News'
+title = 'Cashless Watch'
 theme = 'PaperMod'
 
 [params]
@@ -24,7 +24,7 @@ theme = 'PaperMod'
   enableEmoji = true
 
   [params.homeInfoParams]
-    Title = "CashlessConsumer Fintech"
+    Title = "Cashless Watch"
     Content = "India's automated fintech intelligence — daily briefs on UPI, RBI, startups, funding & policy. Plus themed deep dives every day at 8:30 AM."
 
   [[params.profileMode.buttons]]
