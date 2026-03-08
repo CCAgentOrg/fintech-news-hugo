@@ -14,7 +14,7 @@ description: "Full agent instruction for the Themed Fintech Deep Dive — Cashle
 | Property | Value |
 |----------|-------|
 | **Name** | Themed Fintech Deep Dive |
-| **Blog** | Cashless Watch |
+| **Blog** | CashlessConsumer Fintech News |
 | **Schedule** | Daily @ 8:30 AM IST |
 | **Coverage** | Last 7 days |
 | **Model** | minimax-m2.5 |
@@ -158,7 +158,7 @@ description: "Weekly analysis of [Theme] in Indian fintech: APIs, startups, poli
 ### 5. Publishing Commands
 
 ```bash
-cd /home/.z/workspaces/cashless-watch
+cd /home/.z/workspaces/fintech-news-hugo
 git checkout main
 git pull origin main
 THEME=$(date +%A | tr '[:upper:]' '[:lower:]')
@@ -183,7 +183,7 @@ git push origin main
 ## How to Improve This Agent
 
 ### Suggest Changes
-1. **Open an Issue**: [github.com/CCAgentOrg/cashless-watch/issues](https://github.com/CCAgentOrg/cashless-watch/issues)
+1. **Open an Issue**: [github.com/CCAgentOrg/fintech-news-hugo/issues](https://github.com/CCAgentOrg/fintech-news-hugo/issues)
 2. **Submit a PR**: Edit `content/agents/themed-fintech-deep-dive-agent.md`
 
 ---
@@ -192,8 +192,8 @@ git push origin main
 
 | Date | Change | Commit |
 |------|--------|--------|
-| 2026-03-08 | Initial agent creation with 5-day theme rotation | [87e0a3c](https://github.com/CCAgentOrg/cashless-watch/commit/87e0a3c) |
+| 2026-03-08 | Initial agent creation with 5-day theme rotation | [87e0a3c](https://github.com/CCAgentOrg/fintech-news-hugo/commit/87e0a3c) |
 
 ---
 
-*This agent is part of the Cashless Watch project. All agent instructions are open source under CC BY-SA 4.0.*
+*This agent is part of the CashlessConsumer Fintech News project. All agent instructions are open source under CC BY-SA 4.0.*
