@@ -4,20 +4,3 @@ description: "AI-powered fintech intelligence for India — daily briefs at 8:00
 date: 2026-03-08T10:00:00+05:30
 draft: false
 ---
-
-<!-- Structured Data for SEO -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Cashless Watch",
-  "description": "AI-powered fintech intelligence for India — daily briefs at 8:00 AM, themed deep dives at 8:30 AM",
-  "url": "https://watch.cashlessconsumer.in",
-  "publisher": {
-    "@type": "Organization",
-    "name": "CashlessConsumer",
-    "url": "https://cashlessconsumer.in"
-  },
-  "image": "https://watch.cashlessconsumer.in/avatar.png"
-}
-</script>
