@@ -1,72 +1,49 @@
 {
   "version": "1.0",
   "blog": "Cashless Watch",
-  "description": "India's automated fintech intelligence - tracking RBI, SEBI, UPI, startups, funding, and consumer rights",
+  "url": "https://watch.cashlessconsumer.in",
   "agents": [
     {
       "id": "651b5ce7-9157-442e-99ab-9539d23df862",
       "name": "Daily Fintech Brief",
-      "schedule": "0 8 * * *",
-      "timezone": "Asia/Kolkata",
-      "focus": "Top fintech news from last 24 hours",
-      "output_format": "500-800 word brief with 2-4 top stories",
-      "categories": ["RBI", "SEBI", "UPI", "NPCI", "Startups", "Funding", "Policy"],
-      "sources": {
-        "regulatory": ["rbi.org.in", "sebi.gov.in", "ibbi.gov.in", "fiuindia.gov.in"],
-        "payments": ["npci.org.in", "upi.org"],
-        "startups": ["inc42.com", "tracxn.com", "yourstory.com", "entrackr.com"],
-        "capital": ["nseindia.com", "bseindia.com", "amfiindia.com"],
-        "insurance": ["irdai.gov.in"]
-      }
+      "type": "scheduled",
+      "schedule": "Daily 8:00 AM",
+      "description": "Daily fintech news brief covering last 24 hours"
     },
     {
       "id": "0862617d-c763-4a0c-8340-b4647dbf30f7",
       "name": "Themed Deep Dive",
-      "schedule": "30 8 * * *",
-      "timezone": "Asia/Kolkata",
-      "focus": "Rotating sector analysis from last 7 days",
-      "output_format": "1500-2000 word in-depth analysis",
-      "themes": {
-        "monday": "Developer & Technical",
-        "tuesday": "Buzz & Funding",
-        "wednesday": "Consumer Fintech",
-        "thursday": "International & Cross-Border",
-        "friday": "Policy & Regulation"
-      }
+      "type": "scheduled",
+      "schedule": "Daily 8:30 AM",
+      "description": "Themed sector analysis covering last 7 days"
     },
     {
-      "id": "e8700c17-2800-434f-9d57-fdafed4190a1",
+      "id": "d23b2a7f-9157-431e-9130-a9d87e6b459356",
       "name": "Weekly Deep Research",
-      "schedule": "0 9 * * 0",
-      "timezone": "Asia/Kolkata",
-      "focus": "2000+ word comprehensive analysis of most significant topic",
-      "output_format": "Long-form analytical piece with historical context",
-      "features": ["Emerging trends", "Market analysis", "Consumer implications"]
+      "type": "scheduled",
+      "schedule": "Sundays 9:00 AM",
+      "description": "2000+ word comprehensive weekly analysis"
     },
     {
-      "id": "5d58a119-f5b2-4a7d-9996-084d165b23ed",
+      "id": "f58efc84-6f9d-432e-a130-5a87c9bf4543",
       "name": "Weekly Satire",
-      "schedule": "0 10 * * 6",
-      "timezone": "Asia/Kolkata",
-      "focus": "Futuristic satire highlighting consumer rights threats",
-      "format": "Creative fiction with real policy implications",
-      "purpose": "Raise awareness of fintech risks to consumers"
+      "type": "scheduled",
+      "schedule": "Saturdays 10:00 AM",
+      "description": "Futuristic satire highlighting consumer rights threats"
     },
     {
-      "id": "d23b2a7f-9156-4130-a977-d87e6b459356",
+      "id": "a84b9a46-0dd3-42e7-b15a-9e80ea6eab1b",
       "name": "101 Explainer Agent",
-      "schedule": "0 9 * * 3",
-      "timezone": "Asia/Kolkata",
-      "focus": "Encyclopedic explainers from consumer rights perspective",
-      "output_format": "1500-2000 word guides with fact-checking",
-      "features": [
-        "What is X",
-        "How it works",
-        "Why it matters",
-        "Consumer Rights Analysis",
-        "Prime References"
-      ],
-      "topics": ["UPI", "RBI", "NPCI", "SEBI", "Lending", "Insurance", "Crypto", "Neobanks"]
+      "type": "on-demand",
+      "trigger": "Manual request",
+      "description": "Generates encyclopedic explainer guides"
+    },
+    {
+      "id": "3f2e1a8c-9d4b-42f5-a8e1-7c6d5e3f2b1a",
+      "name": "Stakeholder Agent",
+      "type": "on-demand",
+      "trigger": "Manual request",
+      "description": "Generates stakeholder directory and relationship maps"
     }
   ]
 }
