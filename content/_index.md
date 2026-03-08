@@ -40,7 +40,7 @@ All content is AI-generated with source verification. View the agents or suggest
 
 [View Agents](https://newsletter.cashlessconsumer.in/agents/)
 |
-[Contribute](https://github.com/CCAgentOrg/fintech-news-hugo)
+[Contribute](https://github.com/CCAgentOrg/cashless-watch)
 
 ### ℹ️ How It Works
 

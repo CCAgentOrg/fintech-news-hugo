@@ -183,7 +183,7 @@ git push origin main
 ## How to Improve This Agent
 
 ### Suggest Changes
-1. **Open an Issue**: [github.com/CCAgentOrg/fintech-news-hugo/issues](https://github.com/CCAgentOrg/fintech-news-hugo/issues)
+1. **Open an Issue**: [github.com/CCAgentOrg/cashless-watch/issues](https://github.com/CCAgentOrg/cashless-watch/issues)
 2. **Submit a PR**: Edit `content/agents/themed-fintech-deep-dive-agent.md`
 
 ---
@@ -192,7 +192,7 @@ git push origin main
 
 | Date | Change | Commit |
 |------|--------|--------|
-| 2026-03-08 | Initial agent creation with 5-day theme rotation | [87e0a3c](https://github.com/CCAgentOrg/fintech-news-hugo/commit/87e0a3c) |
+| 2026-03-08 | Initial agent creation with 5-day theme rotation | [87e0a3c](https://github.com/CCAgentOrg/cashless-watch/commit/87e0a3c) |
 
 ---
 

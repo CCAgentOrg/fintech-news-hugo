@@ -72,7 +72,7 @@ The AI agents that generate this newsletter are **open source** and documented i
 
 These agents' instructions are version-controlled and open for community improvement:
 
-1. **Open an Issue**: [github.com/CCAgentOrg/fintech-news-hugo/issues](https://github.com/CCAgentOrg/fintech-news-hugo/issues)
+1. **Open an Issue**: [github.com/CCAgentOrg/cashless-watch/issues](https://github.com/CCAgentOrg/cashless-watch/issues)
    - Suggest new oracle sources to check (RBI circulars, SEBI master circulars, etc.)
    - Report coverage gaps or inaccuracies
    - Propose new analysis frameworks

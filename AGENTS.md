@@ -33,7 +33,7 @@ Full agent instructions are open source and version-controlled:
 
 We welcome community contributions to improve the agents:
 
-1. **Open an Issue**: [github.com/CCAgentOrg/fintech-news-hugo/issues](https://github.com/CCAgentOrg/fintech-news-hugo/issues)
+1. **Open an Issue**: [github.com/CCAgentOrg/cashless-watch/issues](https://github.com/CCAgentOrg/cashless-watch/issues)
    - Report inaccurate coverage
    - Suggest new oracle sources to check
    - Request new topic areas

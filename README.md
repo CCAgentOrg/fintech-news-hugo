@@ -52,7 +52,7 @@ This blog is entirely automated by two AI agents:
 
 ```bash
 # Clone
-git clone https://github.com/CCAgentOrg/fintech-news-hugo.git
+git clone https://github.com/CCAgentOrg/cashless-watch.git
 cd fintech-news-hugo
 
 # Install Hugo (extended version)
@@ -98,7 +98,7 @@ Submit issues/PRs to:
 - **Website**: https://newsletter.cashlessconsumer.in
 - **About**: https://newsletter.cashlessconsumer.in/about/
 - **Agents**: https://newsletter.cashlessconsumer.in/agents/
-- **GitHub**: https://github.com/CCAgentOrg/fintech-news-hugo
+- **GitHub**: https://github.com/CCAgentOrg/cashless-watch
 - **Main Site**: https://cashlessconsumer.in
 
 ---
