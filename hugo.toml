@@ -33,9 +33,11 @@ theme = 'PaperMod'
     imageWidth = 120
     imageHeight = 120
     buttons = [
-      {name = "📰 Read Latest", url = "posts"},
-      {name = "🤖 View Agents", url = "agents"},
-      {name = "ℹ️ About", url = "about"}
+      {name = "📰 Latest Posts", url = "/posts"},
+      {name = "📚 101 Explainers", url = "/explainers"},
+      {name = "🤖 Agents", url = "/agents"},
+      {name = "🏛️ Stakeholders", url = "/stakeholders"},
+      {name = "ℹ️ About", url = "/about"}
     ]
 
   [params.assets]
