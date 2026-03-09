@@ -1,73 +1,84 @@
 ---
-title: "Agent: Stakeholder Agent (On-Demand)"
-date: 2026-03-08T12:00:00+05:30
-draft: false
-tags: ["Agents", "AI", "Stakeholders", "On-Demand"]
-categories: ["Meta"]
-description: "On-demand agent to generate stakeholder directories and relationship maps"
+title: "Agent: Stakeholder Mapping Agent"
+description: "On-demand agent for creating fact-checked stakeholder maps"
 ---
 
-# 🤖 Agent: Stakeholder Agent (On-Demand)
+## CashlessConsumer Stakeholder Mapping Agent
 
-## Overview
+Mission
+Create comprehensive, fact-checked stakeholder maps for India's fintech ecosystem with cross-verification.
 
-| Property | Value |
-|----------|-------|
-| **Name** | Stakeholder Agent |
-| **Type** | On-Demand |
-| **Trigger** | Manual / Issue-based |
-| **Model** | minimax-m2.5 |
-| **Output** | Comprehensive stakeholder directory |
+### Cross-Verification Steps (MANDATORY)
 
-## Mission
+For EVERY piece of information, you MUST:
 
-Generate and maintain stakeholder directories mapping key players, their relationships, and hierarchies in the fintech/DPI ecosystem.
+1. **Web Search Verification**
+   - Use web_search with multiple queries to verify key facts
+   - Search for the same information from different sources
+   - Note any conflicting information found
 
-## Trigger
+2. **Official Source Verification**
+   - Always verify against official websites (rbi.org.in, sebi.gov.in, npci.org.in, etc.)
+   - Use read_webpage to fetch official pages directly
+   - Cross-reference dates, names, figures
 
-This agent runs when:
-1. A new issue requests a stakeholder map
-2. Major regulatory/policy change requires stakeholder update
-3. Quarterly refresh of existing stakeholder pages
+3. **Conflict Detection**
+   - If multiple sources conflict, note ALL versions
+   - Prefer official/government sources over media reports
+   - Flag uncertain information clearly
 
-## Stakeholder Categories
+4. **Source Attribution**
+   - Every fact must have a cited source
+   - Use numeric citations [^1], [^2], etc.
+   - List all sources at the end in "References"
 
-For Fintech:
-- Regulators: RBI, SEBI, IRDAI, FIU-IND
-- Payment Infrastructure: NPCI, Banks, TPAPs
-- Fintech Companies: Startups, NBFCs, Lenders
-- Industry Bodies: IAMAI, Fintech India, IBA
-- Consumer Advocacy: CashlessConsumer, PAIGAM
+### Output Format
 
-For DPI:
-- Identity: UIDAI, MeitY
-- Finance: NPCI, RBI, SIDBI
-- Health: NHA, Ayushman Bharat
-- Agriculture: AgriStack, Mahindra
-- Governance: DARPG, MeitY, States
+```yaml
+---
+title: "[Organization Name] — Stakeholder Map"
+date: YYYY-MM-DD
+draft: false
+tags: [Stakeholder Map, Verification]
+categories: [Stakeholders]
+description: "Fact-checked stakeholder analysis for [organization]"
+---
 
-## Output Format
+# [Organization Name]
 
-See existing stakeholders.md for format structure.
+## Verified Facts
 
-## Publishing
+[^1]: Official source URL
+[^2]: Verification source URL
 
-```bash
-# Update stakeholder directory
-TOPIC="[Sector Name]"
-cat > content/stakeholders.md << 'EOF'
-[generated content]
-EOF
+### Overview
+[Fact-checked overview]
 
-git add content/stakeholders.md
-git commit -m "Update stakeholders: ${TOPIC}"
-git push
+### Key Personnel
+| Role | Name | Verified Source |
+|------|------|-----------------|
+
+### Regulatory Status
+[Verified regulatory status with dates]
+
+### Contact Information
+[Official contact info - verified]
+
+## Verification Notes
+- [Date]: Verified [fact] from [^1]
+- [Date]: Found conflicting info - [details]
+
+## References
+[^1]: [URL]
+[^2]: [URL]
 ```
 
-## Quality Checklist
+### Publishing
+Save to: `content/stakeholders/[organization-name].md`
+Commit with: "Add [Organization] stakeholder map - fact-checked"
 
-- [ ] All key stakeholders included
-- [ ] Contact/official links verified
-- [ ] Hierarchical relationships clear
-- [ ] Recent updates reflected
-- [ ] Consumer contact points listed
+### Quality Standards
+- NO information without source verification
+- Flag any unverified claims clearly
+- Update stakeholder maps when new information verified
+- Cross-reference at least 3 sources for key facts
