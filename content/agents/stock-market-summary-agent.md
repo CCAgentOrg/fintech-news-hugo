@@ -277,3 +277,91 @@ If primary source fails:
 ---
 
 *This agent is part of the CashlessConsumer CashlessWatch project. All agent instructions are open source.*
+
+---
+
+## News Integration System
+
+### Step 0: Read Daily Brief First
+**BEFORE fetching stock data, read today's Daily Brief:**
+
+```bash
+# Read today's brief for context
+cat /home/.z/workspaces/con_PXCpywVCLwND9RsD/cashless-watch/content/posts/$(date +%Y-%m-%d)-fintech-brief.md
+```
+
+**Extract key news items that could impact stocks:**
+- RBI/NPCI policy changes → Payment stocks
+- UPI updates → PAYTM, FINOPB, NPST
+- Credit card news → SBICARD, banks
+- Insurance regulation → PBFINTECH
+- Bank digital initiatives → HDFCBANK, ICICIBANK, etc.
+
+### Step 1: News-Annotated Output
+
+Add **News Context** column to ALL tables:
+
+```markdown
+## 🏦 BANKS — Digital Payments Leaders
+| Company | Symbol | Price | Change | News Context |
+|---------|--------|-------|--------|--------------|
+| HDFC Bank | HDFCBANK | ₹X | X% | [News from brief or "No major news"] |
+```
+
+**News Context Format:**
+- 🟢 **Positive**: "Apple Pay partnership", "Q3 earnings beat", "RBI approval"
+- 🔴 **Negative**: "CIRP proceedings", "competition from X", "regulatory fine"
+- ⚪ **Neutral**: "No major news", "market beta", "sector rotation"
+
+---
+
+## Cashless Watch Reco (Cross-Agent Output)
+
+Generate a **combined intelligence** section:
+
+```markdown
+## 🔗 Cashless Watch Reco
+
+### Today's Ranked Watchlist
+
+| Rank | Scrip | Price | Technical | News Catalyst | Combined Score | Action |
+|------|-------|-------|-----------|---------------|----------------|--------|
+| 1 | PAYTM | ₹X | +X% | NPCI news | HIGH | 📊 Watch closely |
+| 2 | HDFCBANK | ₹X | +X% | Digital push | MEDIUM | 👀 Monitor |
+| 3 | ... | ... | ... | ... | ... | ... |
+
+### Ranking Logic
+**Score = Technical Setup (40%) + News Significance (60%)**
+
+| Factor | Weight | Calculation |
+|--------|--------|-------------|
+| % Change magnitude | 20% | Absolute % move |
+| Volume vs avg | 20% | Relative volume |
+| News impact | 40% | Bullish/Neutral/Bearish |
+| Sector momentum | 20% | Index correlation |
+
+### CashlessConsumer Lens
+> *"[1-2 sentence commentary on why these matter to consumers. E.g., 'Paytm's UPI push affects wallet users' daily experience']"*
+
+**Cross-Reference:**
+- See detailed news in today's [Daily Brief](YYYY-MM-DD-fintech-brief.md)
+- Previous stock levels: [Yesterday's Stock Watch](YYYY-MM-DD-stock-watch.md)
+```
+
+---
+
+## Enhanced Helper Scripts
+
+### `fetch-with-news.py`
+Enhanced data fetcher that:
+1. Reads Daily Brief
+2. Extracts stock-impacting news
+3. Annotates stock data with news context
+4. Generates Cashless Watch Reco ranking
+
+**Usage:**
+```bash
+./scripts/fetch-with-news.py --date $(date +%Y-%m-%d)
+```
+
+**Output:** Enhanced JSON with `news_context` field

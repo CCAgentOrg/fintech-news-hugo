@@ -96,7 +96,88 @@ Every day at 8:00 AM IST:
 - SEBI Monthly: Investor trends, demat accounts
 - MCA: Ministry of Corporate Affairs filings
 
-### 3. Output Format
+---
+
+## Stock Cross-Reference System
+
+### Stock Scrip Integration
+When any listed company appears in news, **ALWAYS** include:
+
+```markdown
+| Stock Alert | NSE: [SYMBOL] | LTP: ₹[PRICE] | Change: [X]% |
+|-------------|---------------|---------------|--------------|
+```
+
+**Cashless Watch Universe — Listed Fintech/PayTech**
+| Tier | Company | Symbol | Why It Matters |
+|------|---------|--------|----------------|
+| B1 | One97 (Paytm) | PAYTM | India's largest wallet, UPI leader |
+| B1 | MobiKwik | MOBIKWIK | Mobile wallet, 183M+ users |
+| B2 | PB Fintech (PolicyBazaar) | PBFINTECH | Insurance aggregation leader |
+| B3 | Infibeam Avenues | INFIBEAM | Enterprise payment gateway |
+| B3 | Pine Labs | PINELABS | Merchant POS terminals |
+| B3 | NPST | NPST | UPI infrastructure |
+| B4 | Fino Payments Bank | FINOPB | 143M+ customers |
+| B4 | SBI Cards | SBICARD | Pure-play credit cards |
+| B5 | AGS Transact | AGSTRA | ⚠️ Under CIRP |
+
+**Banks — Digital Payments Leaders**
+| Company | Symbol | Digital Edge |
+|---------|--------|--------------|
+| HDFC Bank | HDFCBANK | 22% credit card market |
+| ICICI Bank | ICICIBANK | iMobile Pay, Apple Pay |
+| SBI | SBIN | Largest UPI volume |
+| Axis Bank | AXISBANK | Digital-first strategy |
+| Kotak Bank | KOTAKBANK | 811 digital bank |
+
+---
+
+## Market Impact Analysis
+
+### Stock-Market Impact Section
+Add after each major story:
+
+```markdown
+### 📈 Stock Market Impact
+| Scrip | Potential Impact | Rationale |
+|-------|------------------|-----------|
+| [SYMBOL] | [Bullish/Neutral/Bearish] | [1-line reasoning] |
+```
+
+**Impact Categories:**
+- **🟢 Bullish**: Positive news, earnings beat, policy tailwind
+- **🟡 Neutral**: Mixed signals, already priced in
+- **🔴 Bearish**: Regulatory headwinds, competition, negative news
+
+---
+
+## Enhanced Output: Cashless Watch Reco
+
+Add to every brief:
+
+```markdown
+## 🔗 Cashless Watch Reco
+**Today's Focus Scrips:**
+- [SYMBOL] — [Reason from news]
+- [SYMBOL] — [Reason from news]
+
+**Cross-Agent Data:**
+- See today's [Stock Market Summary](YYYY-MM-DD-stock-watch.md) for levels
+```
+
+### Stock Universe Quick Reference
+| News Category | Likely Scrips to Check |
+|---------------|------------------------|
+| RBI/NPCI policy | PAYTM, HDFCBANK, ICICIBANK, INFIBEAM |
+| UPI updates | PAYTM, FINOPB, NPST |
+| Credit cards | SBICARD, HDFCBANK, ICICIBANK, AXISBANK, SBIN |
+| Insurance | PBFINTECH |
+| Payment gateways | INFIBEAM, PINELABS |
+| Bank digital | All 5 major banks |
+
+---
+
+## Output Format
 
 ```yaml
 ---
