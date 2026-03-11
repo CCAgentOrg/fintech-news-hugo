@@ -1,23 +1,31 @@
 {
   "version": "2.0",
   "last_updated": "2026-03-11",
-  "description": "Machine-readable agent registry for Cashless Watch",
+  "description": "Machine-readable agent registry for Cashless Watch — synced with running agents",
   "scheduled_agents": [
-    {
-      "id": "1b340206-ec48-4a99-a301-eec308b11d22",
-      "name": "Stock Market Summary",
-      "type": "scheduled",
-      "schedule": "Market days (Mon-Fri) 8:15 AM IST",
-      "description": "Pre-market summary: Indices, Banks, and Pure-Play Fintech",
-      "source_file": "content/agents/stock-market-summary-agent.md"
-    },
     {
       "id": "651b5ce7-9157-442e-99ab-9539d23df862",
       "name": "Daily Fintech Brief",
       "type": "scheduled",
       "schedule": "Daily 8:00 AM IST",
-      "description": "Top fintech news from last 24 hours",
-      "source_file": "content/agents/daily-brief-agent.md"
+      "description": "Top fintech news from last 24 hours with stock cross-reference",
+      "source_file": "content/agents/daily-fintech-brief-agent.md",
+      "model": "vercel:minimax/minimax-m2.5",
+      "delivery": "hugo",
+      "repo": "CCAgentOrg/cashless-watch",
+      "next_run": "Daily at 8:00 AM IST"
+    },
+    {
+      "id": "1b340206-ec48-4a99-a301-eec308b11d22",
+      "name": "Stock Market Summary",
+      "type": "scheduled",
+      "schedule": "Market days (Mon-Fri) 8:15 AM IST",
+      "description": "Pre-market summary: Indices, Banks, and Pure-Play Fintech with news integration",
+      "source_file": "content/agents/stock-market-summary-agent.md",
+      "model": "vercel:minimax/minimax-m2.5",
+      "delivery": "telegram + hugo",
+      "repo": "CCAgentOrg/cashless-watch",
+      "next_run": "Mon-Fri at 8:15 AM IST"
     },
     {
       "id": "0862617d-c763-4a0c-8340-b4647dbf30f7",
@@ -25,15 +33,23 @@
       "type": "scheduled",
       "schedule": "Daily 8:30 AM IST",
       "description": "Rotating sector analysis (Mon-Fri)",
-      "source_file": "content/agents/themed-deep-dive-agent.md"
+      "source_file": "content/agents/themed-fintech-deep-dive-agent.md",
+      "model": "vercel:minimax/minimax-m2.5",
+      "delivery": "hugo",
+      "repo": "CCAgentOrg/cashless-watch",
+      "next_run": "Daily at 8:30 AM IST"
     },
     {
       "id": "e8700c17-2800-434f-9d57-fdafed4190a1",
       "name": "Weekly Deep Research",
       "type": "scheduled",
       "schedule": "Sundays 9:00 AM IST",
-      "description": "2000+ word comprehensive analysis",
-      "source_file": "content/agents/weekly-deep-research-agent.md"
+      "description": "2000+ word comprehensive weekly analysis",
+      "source_file": "content/agents/weekly-deep-research-agent.md",
+      "model": "vercel:minimax/minimax-m2.5",
+      "delivery": "hugo",
+      "repo": "CCAgentOrg/cashless-watch",
+      "next_run": "Sundays at 9:00 AM IST"
     },
     {
       "id": "5d58a119-f5b2-4a7d-9996-084d165b23ed",
@@ -41,7 +57,11 @@
       "type": "scheduled",
       "schedule": "Saturdays 10:00 AM IST",
       "description": "Futuristic satire on consumer rights",
-      "source_file": "content/agents/weekly-satire-agent.md"
+      "source_file": "content/agents/weekly-satire-agent.md",
+      "model": "vercel:minimax/minimax-m2.5",
+      "delivery": "hugo",
+      "repo": "CCAgentOrg/cashless-watch",
+      "next_run": "Saturdays at 10:00 AM IST"
     },
     {
       "id": "d23b2a7f-9156-4130-a977-d87e6b459356",
@@ -49,7 +69,23 @@
       "type": "scheduled",
       "schedule": "Wednesdays 9:00 AM IST",
       "description": "Encyclopedic guides with consumer rights focus",
-      "source_file": "content/agents/101-explainer-agent.md"
+      "source_file": "content/agents/explainer-agent.md",
+      "model": "vercel:minimax/minimax-m2.5",
+      "delivery": "hugo",
+      "repo": "CCAgentOrg/cashless-watch",
+      "next_run": "Wednesdays at 9:00 AM IST"
+    },
+    {
+      "id": "ca4e6436-fe75-4825-b27a-c4c1fa7b16c0",
+      "name": "Weekly Self-Improvement Audit",
+      "type": "scheduled",
+      "schedule": "Thursdays 12:00 PM IST",
+      "description": "Agent capability audit and improvement proposals",
+      "source_file": "content/agents/weekly-self-improvement-agent.md",
+      "model": "vercel:minimax/minimax-m2.5",
+      "delivery": "telegram",
+      "repo": "CCAgentOrg/cashless-watch",
+      "next_run": "Thursdays at 12:00 PM IST"
     }
   ],
   "on_demand_agents": [
@@ -60,9 +96,37 @@
       "trigger": "Manual via chat",
       "description": "Fact-checked stakeholder maps with cross-verification",
       "source_file": "content/agents/stakeholder-agent.md",
+      "model": "vercel:minimax/minimax-m2.5",
       "version": "2.0",
       "mission_included": true,
       "cross_verification": true
+    }
+  ],
+  "helper_scripts": [
+    {
+      "name": "fetch-stock-data.py",
+      "purpose": "Oracle data fetching for stock prices",
+      "location": "scripts/"
+    },
+    {
+      "name": "fetch-with-news.py",
+      "purpose": "Enhanced fetcher with Daily Brief news integration",
+      "location": "scripts/"
+    },
+    {
+      "name": "generate-hugo-post.py",
+      "purpose": "Hugo markdown generation",
+      "location": "scripts/"
+    },
+    {
+      "name": "send-telegram-alert.py",
+      "purpose": "Telegram alert sender",
+      "location": "scripts/"
+    },
+    {
+      "name": "stock-watch.sh",
+      "purpose": "Stock watch pipeline orchestrator",
+      "location": "scripts/"
     }
   ]
 }
