@@ -145,6 +145,24 @@ Industry analysts have offered varied perspectives on the new framework:
 - **Stricter onboarding**: Banks may implement more rigorous verification, potentially excluding underbanked populations
 - **Claim processing delays**: Without robust systems, the 30-day resolution window may be challenging
 
+## International Comparison
+
+India's new RBI fraud protection framework is a significant step forward in digital banking consumer protection. However, it is important to compare it with international practices to understand its strengths and weaknesses.
+
+### United States
+
+In the US, the Electronic Fund Transfer Act (EFTA) and Regulation E provide a framework for consumer protection in electronic fund transfers. The Federal Reserve Board (FRB) is responsible for enforcing these regulations. The EFTA provides for a $50,000 limit on liability for unauthorized transactions, with a $500 limit for disputes over the validity of a transaction. The FRB has also established a dispute resolution process for consumers to file complaints against financial institutions.
+
+### United Kingdom
+
+In the UK, the Financial Ombudsman Service (FOS) is responsible for resolving disputes between consumers and financial services providers. The FOS has established a compensation scheme for customers who have suffered losses due to fraud or negligence. The scheme provides for a maximum compensation of £50,000, with a £10,000 limit for disputes over the validity of a transaction. The FOS also has a zero-liability policy for customers who have suffered losses due to fraud or negligence.
+
+### European Union
+
+In the EU, the Payment Services Directive (PSD) provides a framework for consumer protection in electronic payments. The PSD requires member states to establish a compensation scheme for customers who have suffered losses due to fraud or negligence. The scheme provides for a maximum compensation of €10,000, with a €1,000 limit for disputes over the validity of a transaction. The PSD also requires member states to establish a zero-liability policy for customers who have suffered losses due to fraud or negligence.
+
+India's new RBI framework is more generous than the US and UK frameworks, with a higher compensation limit and a zero-liability policy. However, it is less generous than the EU framework, with a lower compensation limit and a higher limit for disputes over the validity of a transaction. The RBI framework also has a one-time limit, which is not present in the US and UK frameworks.
+
 ## Looking Ahead
 
 ### The Road to July 1, 2026
